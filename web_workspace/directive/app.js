@@ -8,6 +8,8 @@ import ModelComponent from './exam01.js';
 import ListComponent from './list.js';
 import ForComponent from './exam02.js';
 import IfComponent from './if.js';
+import EventComponent from './event.js';
+import WatchComponent from './watch.js';
 const template = ` 
 <div>
     <!-- 자식 컴포넌트 추가-->
@@ -16,7 +18,9 @@ const template = `
     <!-- <ModelComponent/> -->
     <!-- <ListComponent/>-->
     <!--  <ForComponent/>-->
-    <IfComponent/>
+    <!-- <IfComponent/>, -->
+    <!-- <EventComponent/>, -->
+    <WatchComponent/>
 </div>
 `;
 // 자식컴포넌트는 하나의 태그로 인식. 태그를 기반으로 이 위치에 컴포넌트를 쓰고싶다.를 알려줌. 
@@ -29,7 +33,9 @@ createApp({
        //ModelComponent,
        //ListComponent,
        //ForComponent,
-       IfComponent
+       //IfComponent,
+       //EventComponent,
+       WatchComponent
     }
 })
 .mount('#app');
