@@ -7,18 +7,19 @@ let template = `
                 <tr>
                     <th>id</th>
                     <th>name</th>
-                    <th>userName</th>
-                    <th>Email</th>
+                    <th>username</th>
+                    <th>email</th>
                 </tr>
             </thead>
             <tbody>
-                <template v-for="user in userList" :key="user.id" /> 
+                <template v-for="user in userList" :key="user.id" > 
                     <tr v-if = "user.id <= 10" @click="goToDetail(user.id)">
                         <td>{{user.id}}</td>
                         <td>{{user.name}}</td>
-                        <td>{{user.userName}}</td>
-                        <td>{{user.Email}}</td>
+                        <td>{{user.username}}</td>
+                        <td>{{user.email}}</td>
                     </tr>
+                </template>
             </tbody>
         </table>
     </div>
